@@ -1,0 +1,27 @@
+@tailwind components;
+@tailwind utilities;
+@tailwind base;
+
+/*
+ * https://www.reddit.com/r/nextjs/comments/y7cdtj/comment/itqxdvn/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
+ */
+html {
+  --scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
+}
+
+body {
+  background-image: linear-gradient(to bottom right, #1f1e20, #311445);
+}
+
+@layer base {
+  .section {
+    @apply flex items-center py-8 lg:py-24;
+  }
+}
+
+@layer components {
+  .rounded-btn {
+    @apply pt-2 pb-2 pl-2 pr-2 transition-all text-primary lg:pl-10 lg:pr-10 rounded-3xl bg-secondary hover:bg-primary hover:text-secondary;
+  }
+}
